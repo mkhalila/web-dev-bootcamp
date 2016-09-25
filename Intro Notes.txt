@@ -1,0 +1,50 @@
+Intro:
+	Front End: HTML, CSS, JavaScript
+	Back End:
+	Full Stack: Front End + Back End
+
+Web Basics:
+	Visiting a web page (Example):
+		1. Computer requests copy of webpage from server of website
+		2. This request is put in a Packet
+		3. Packet includes information such as source, destination IP Address
+		4. Packet is sent through many regional networks until it reaches the City's internet hub
+		5. Destination server is identified as located in LA
+		6. Packet is sent via fibre optic cables under the ocean
+		7. Lands in NY Internet hub
+		8. Sent via regional networks to LA server
+		9. Server reads request and prepares webpage
+		10. Too large to send as a single packet
+		11. For internet to work efficiently, webpage is split up into thousands of packets
+		12. Each wrapped with needed info
+		13. Sent back to main LA/NY hub
+		14. Packets sent in many different ways - doesn't matter how they get there, just that they get there asap
+		15. Reaches London hub
+		16. Passed through regional networks until it reaches client machine
+		17. All happens in a second...
+
+Front End:
+	Stuff you see and interact with
+	HTML, CSS, JS - Only
+	Back end is everything else
+	Front end is constructed by the Back end
+	Static webpages Vs. Dynamic webpages
+	Restaurant Analogy: backend is everything that happens in the kitchen, front end is what is on your plate at the table.
+
+HTML
+	HyperText Markup Language
+	Defines STRUCTURE of a webpage
+	The "nouns" of a webpage: e.g. Put an IMAGE here, a FORM here
+	HTML is MANDATORY
+
+CSS
+	Cascading Style Sheets
+	Defines STYLE of HTML
+	The "adjectives" of a webpage
+	E.g. make all text purple, give image yellow border
+	NOT Mandatory
+
+JavaScript
+	Adds logic and interactivity to a page
+	E.g. Do some Math, change colour on click, load news data 
+	The "verbs" of a webpage
