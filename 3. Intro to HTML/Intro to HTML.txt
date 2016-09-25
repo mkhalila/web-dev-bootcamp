@@ -1,0 +1,62 @@
+HyperText Markup Language
+Structure + Content of a page
+Allowed electronic linking of documents via hyperlinks
+
+HTML Tags
+	<tagName> Some Content </tagName>
+	e.g. <b></b> Makes things bold
+	<p></p> Creates seperate paragraph for whatever is inbetween
+
+MDN 
+	Mozilla Developer Network
+	Good resource for HTML, CSS, JS
+
+Markup Language
+	A language with specific syntax that instructs a Web browser how to display a page
+
+Elements
+	Basic building blocks
+	HTML consists of elements
+	Define semantic meaning of their content
+	Two matching tags and everything inbetween
+
+DOM
+	Document Object Model
+	Hierarchical structure of elements
+	e.g. <html> element surrounds the document
+	e.g. <body> element surrounds all page content
+	Inner elements must be closed before outer elements
+
+Empty elements
+	Elements that do not contain any text content or any other elements
+	Need no closing tage
+	e.g. <img src="smileyface.jpg" alt="Smiley face" >
+
+Attributes
+	Start tags may contain Attributes
+	Additional info
+	e.g. <img src="smileyface.jpg" alt="Smiley face" >
+	2 parts: 1) name 2) value
+	Boolean attributes:
+		Only have one value 
+		Can be shortened by only specifiying name or leaving value empty ""
+	Ones that contain a single word or number may be written in quotations marks
+
+Named Character References/Entities
+	Used to print characters that have a special meaning
+	e.g. < > are tag delimiters
+	To display them in text, need to use NCR
+	&gt = >
+	&lt = <
+	&amp = &
+	&quot = "
+
+Comments
+	Not displayed when page is rendered
+	Useful for explanations or reminders
+	<!-- THis is comment text -->
+
+doctype
+	HTML docs must contain a doctype declaration as FIRST line
+	Tells browser which version of HTML the page is written in
+	<!DOCTYPE html>
