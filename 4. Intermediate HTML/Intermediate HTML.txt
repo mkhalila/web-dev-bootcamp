@@ -18,3 +18,9 @@ Input
 		password
 		file 
 		checkbox
+
+Validations
+	Ability to enforce rules and structure to forms
+	E.g. Can't leave email blank
+	HTML: Presence check
+		  Format check

@@ -6,9 +6,23 @@
 <body>
 	<h1>Login</h1>
 
-	<!-- Add placeholder text to input -->
-	<input type="text" placeholder="Username">
-	<input type="password" placeholder="Password">
-	<input type="submit">
+	<!-- action: Where to send the form data -->
+	<!-- method: What HTTP method to use -->
+	<!-- Adds Query string to URL-->
+	<form>
+		<!-- Labels are very useful for making text accessible to screen readers -->
+		<!-- Add placeholder text to input -->
+		<label>Email:
+			<input type="email" placeholder="Email" required> 
+			<!-- required is a boolean attribute -->
+			<!-- email type has built-in validation for @ -->
+		</label>
+
+		<!-- Alternative label syntax: Less nesting -->
+		<label for="password">Password:</label>
+		<input id="password" type="password" placeholder="Password" required>
+		
+		<input type="submit">
+	</form>
 </body>
 </html>
