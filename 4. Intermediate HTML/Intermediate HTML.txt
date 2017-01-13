@@ -1,0 +1,20 @@
+Forms
+	<form>
+	A shell or container for forms
+	action: URL to send form data to
+	method: The type of HTTP request
+		get: Retrieve data from server
+		post: Send data from server
+
+Input
+	<input>
+	Creates interactive controls
+	E.g. TextInput, Button etc.
+	Contained in <form>
+	type: Determines type of input
+		text
+		date
+		color
+		password
+		file 
+		checkbox
