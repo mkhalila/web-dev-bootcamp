@@ -1,11 +1,19 @@
 h1 {
-	color: red;
+	/*Hex colour scheme*/
+	color: #F4000D;
 }
 
 li {
+	/*Built-In colour*/
 	color: green;
 }
 
 h4 {
-	color: purple;
+	/*RGB Colour Scheme*/
+	color: rgb(125, 100, 255);
+}
+
+p {
+	/*RGBA Colour Scheme*/
+	color: rgba(125, 100, 255, 0.6);
 }

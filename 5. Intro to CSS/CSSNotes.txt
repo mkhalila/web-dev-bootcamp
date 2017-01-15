@@ -46,3 +46,14 @@ Implementation
 	Write CSS in separate file
 	Link to HTML in the <head>
 	<link rel="stylesheet" type="text/css" href="">
+
+Colours
+	Lots of built-in colours - hardly used
+	Hex colour scheme #ABCDEF
+	RGB colour scheme
+		color: rgb(0, 255, 0);
+	RGBA colour scheme
+		Additional alpha: transparent colours
+		Ranges from 0.0 - 1.0
+		0 - No transparency
+		1 - Max Transparency
