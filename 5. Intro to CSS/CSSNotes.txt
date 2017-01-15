@@ -18,3 +18,31 @@ General Rule
 		border-color: red;
 		border-width: 3px
 	}
+
+Implementation
+	1. Can style inline in HTML
+	2. Style tag - inside HTML doc
+	3. Link tag
+
+1. Inline = Bad
+	Duplication of styles
+	Also want to seperate concerns
+	HTML should only define structure
+
+	<h1 style="color: purple"></h1>
+
+2. Style Tag
+	Still inside HTML -> BAD
+	<head>
+		<title>About Me</title>
+		<style type="text/css">
+			h1 {
+				color: purple;
+			}
+		</style>
+	</head>
+
+3. Link Tag
+	Write CSS in separate file
+	Link to HTML in the <head>
+	<link rel="stylesheet" type="text/css" href="">
