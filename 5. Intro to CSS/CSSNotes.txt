@@ -68,3 +68,12 @@ Background
 			background-repeat: no-repeat;
 		Stretch background:
 			background-size: cover;
+	Aim for large images or images that tile well
+
+Border
+	Need to state:
+		border-width:
+		border-color:
+		border-style: dashed, dotted, solid
+	Shortcut
+		border: width style color
