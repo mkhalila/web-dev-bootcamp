@@ -77,3 +77,43 @@ Border
 		border-style: dashed, dotted, solid
 	Shortcut
 		border: width style color
+
+Element Selector
+	Selecting entire element so that the styling applies to all occurrences of that element.
+
+	p {
+		color: yellow;
+	}
+
+ID Selector #
+	Selecting a specific instance of an element by it's ID
+	Styling only applies to that element instance.
+	ID must be unique
+	Single out an element
+
+	<li>
+		<input type="checkbox" id="checkbox2">
+		Checkbox 2
+	</li>
+
+	#checkbox2 {
+		color: yellow;
+	}
+
+Class Selector .
+	E.g. Style half of li's one way, other half of li's another styling
+
+	Group elements by class
+		<li class="fruit">Bananas</li>
+		<li class="fruit">Apples</li>
+
+		.fruit {
+			border: 1px solid black;
+		}
+
+Strikethrough
+	text-decoration: line-through;
+
+Checkbox attribute checked
+	checked
+	Ticked by default
