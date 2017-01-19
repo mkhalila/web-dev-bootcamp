@@ -57,3 +57,14 @@ Colours
 		Ranges from 0.0 - 1.0
 		0 - No transparency
 		1 - Max Transparency
+
+Background
+	Use the background property to set background colour
+	For body, h4, p etc.
+	Can also use it to change background to an image
+		background: url(http://... jpg)
+		Tiled my default horizontally and vertically
+		Disabled by: 
+			background-repeat: no-repeat;
+		Stretch background:
+			background-size: cover;

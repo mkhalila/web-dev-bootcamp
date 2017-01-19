@@ -1,6 +1,12 @@
 h1 {
 	/*Hex colour scheme*/
 	color: #F4000D;
+	/*border-color: purple;
+	border-width: 5px;
+	border-style: solid;*/
+
+	/*Shortcut syntax*/
+	border: 2px dashed rgb(255, 100, 80);
 }
 
 li {
@@ -10,10 +16,25 @@ li {
 
 h4 {
 	/*RGB Colour Scheme*/
-	color: rgb(125, 100, 255);
+	color: rgb(200, 100, 255);
+	background: rgb(255, 100, 80);
 }
 
 p {
 	/*RGBA Colour Scheme*/
 	color: rgba(125, 100, 255, 0.6);
+}
+
+body {
+	background: pink;
+	
+	/*background: url(http://turbo.premiumpixels.com/wp-content/uploads/2012/03/preview3.jpg);*/
+	
+	/*Don't tile the background*/
+	/*background-repeat: no-repeat;*/
+	
+	/*Stretch the background*/
+	/*background-size: cover;*/
+
+
 }
