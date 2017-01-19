@@ -1,0 +1,23 @@
+/*Element Selector*/
+li {
+	background: orange;
+}
+
+/*ID Selector*/
+#check2 {
+	background: skyblue;
+}
+
+/*Class Selector*/
+.checkboxes {
+	border: 1px solid black;
+}
+
+.other_checkboxes {
+	background: crimson;
+	border: 1px solid green;
+}
+
+.completed {
+	text-decoration: line-through;
+}
