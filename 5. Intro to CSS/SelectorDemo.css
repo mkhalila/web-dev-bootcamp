@@ -1,0 +1,41 @@
+/*Element*/
+li {
+
+}
+/*Class*/
+.hello {
+
+}
+/*id*/
+#name {
+
+}
+
+/*Star*/
+* {
+	border: 1px solid lightgrey;
+}
+
+/*Descendant Selector*/
+li a {
+	color: red;
+}
+
+/*Adjacent Selector*/
+h4 + ul {
+	border: 4px solid red;
+}
+
+/*Attribute Selector*/
+a[href="http://www.google.co.uk"] {
+	background: blue;
+}
+
+/*Nth of type*/
+ul:nth-of-type(3) {
+	background: purple;
+}
+
+li:nth-of-type(even) {
+	background: pink;
+}
