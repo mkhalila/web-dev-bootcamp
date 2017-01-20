@@ -186,3 +186,19 @@ Nth of type
 		li:nth-of-type(even) {
 			background: green;
 		}
+
+Specificity/Inheritance
+	If you style a ul, the li's also become styled.
+	Inherits styling from parent
+	Assigning styling to body also styles all elements within the body in the same way.
+		body {
+			color: red;
+		}
+	But Specificity overrides Inheritance styling
+		A more specific styling overrides more generic styling
+		E.g. body < ul < li < class < id
+	Can have multiple styles targeting a single element.
+
+	Universal Selectors < Type Selectors (li, li a, li + a) < Class, Attribute Selectors (.hello, .special, .fruits, input[type="text"]) < ID Selectors (#special)
+
+	i.e. ID are the most specific you can get
