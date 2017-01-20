@@ -123,3 +123,66 @@ Chrome Inspector
 	Can view CSS attached to a particular element instance
 	Can modify (does not change file) styling to see how changes would effect the component in real-time 
 	See elements and implementations of other websites
+
+Advanced Selectors
+	Star
+	Descendant Selector
+	Adjacent Selector
+	Attribute Selector
+	nth of type
+
+Star Selector
+	Styling applies to EVERYTHING on the page
+	* {
+
+	}
+
+Descendant Selector
+	Common
+	Takes two or more selectors
+		E.g. All anchor tags within a <li>
+			li a {
+
+			}
+		E.g. All elements belonging to class hello within a <li> tag
+			li .hello {
+
+			}
+
+Adjacent Selector
+	Select elements that come after another element
+	Not nested, on the same level, sibling
+	E.g. All ul's that come after a h4
+		h4 + ul {
+
+		}
+
+Attribute Selector
+	Select elements based off any element
+	E.g. Style all anchor tags that have href www.google.co.uk
+		a[href=http://www.google.co.uk] {
+
+		}
+	E.g. Style all text boxes as blue
+		input[type="text"] {
+			background: blue;
+		}
+
+Nth of type
+	Takes a number, selects every nth of a specific element
+	E.g. Select every second li, every 5th div...
+
+	E.g. Select third occurance of ul
+		ul:nth-of-type(3) {
+			background: purple;
+		}
+
+	E.g. Select third occurance of li
+		li:nth-of-type(3) {
+			background: pink;
+		}	
+
+	E.g. Select every other li 
+		li:nth-of-type(even) {
+			background: green;
+		}
