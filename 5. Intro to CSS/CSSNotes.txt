@@ -117,3 +117,9 @@ Strikethrough
 Checkbox attribute checked
 	checked
 	Ticked by default
+
+Chrome Inspector
+	Helps highlight individual HTML components
+	Can view CSS attached to a particular element instance
+	Can modify (does not change file) styling to see how changes would effect the component in real-time 
+	See elements and implementations of other websites
