@@ -52,3 +52,13 @@ Margin
 		margin: 0 auto 0 auto; (margin: auto 0;)
 		margin: left/right top/bottom 
 			margin: 20px 50px
+
+float
+	Used to arrange block level elements on the same line
+	Can also eliminate pre-existing whitespace characters
+
+	img {
+		float = left;
+	}
+
+	Pushes all img elements on the same line, against the left side.
