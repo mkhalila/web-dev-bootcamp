@@ -1,0 +1,28 @@
+CSS Font Stack
+	See which fonts available on both Win and Mac
+	p {
+		font-family: Arial;
+	}
+
+	"" necessary around quotes that start with numbers
+
+Units for font-size
+	px - pixel font size
+	em - relative font size. Relative to parent size
+		2.0em is double parent size
+	Dynamic
+
+font-weight
+	How bold or lightweight text is
+	How thick lines are
+
+line-height
+	Controls height of a given line
+	Like line spacing
+
+text-align
+	How text is aligned
+	right, left, centre
+
+text-decoration
+	Give font underline, line-through, overline
