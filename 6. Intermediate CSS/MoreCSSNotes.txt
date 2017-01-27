@@ -26,3 +26,29 @@ text-align
 
 text-decoration
 	Give font underline, line-through, overline
+
+Online fonts
+	More reliable, not limited by system fonts
+	Google fonts
+
+The Box Model
+	Positioning of elements
+	Central to everthing in HTML CSS
+	Every element has a rectangular box around it
+	Can style properties of this box
+		Content
+		Padding - inside space from border to content
+		Border
+		Margin - between outside and border, add space inbetween elements
+	By defaults elements go "all the way accross the screen"
+	To change width use width: 200px;
+		Good to use percentage for this
+
+Margin
+	margin: top right bottom left
+	margin-top
+	margin auto on left and right
+		Center element for us
+		margin: 0 auto 0 auto; (margin: auto 0;)
+		margin: left/right top/bottom 
+			margin: 20px 50px

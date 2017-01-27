@@ -1,0 +1,17 @@
+p {
+	/*50% of parent element - adjusts to window size*/
+	width: 50%; 
+	/*height: 200px;*/
+	border: 2px solid blue;
+
+	/*All 4 sides*/
+	/*padding: 10px;*/
+	padding-left: 40px;
+
+	/*Outside of border*/
+	/*margin: 100px;*/
+	/*margin-top: 50px;*/
+	/*margin: 20px 40px 500px 100px;*/
+	margin: 0 auto 0 auto;
+	margin: 0 auto;
+}
