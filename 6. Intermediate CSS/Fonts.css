@@ -3,8 +3,16 @@ p {
 	font-family: Arial;
 }
 
+p {
+	font-family: Raleway;
+}
+
 h1 {
 	font-family: Georgia;
+}
+
+h1 {
+	font-family: Indie Flower;
 }
 
 /*Font Family*/
@@ -26,7 +34,7 @@ span {
 }
 
 p {
-	font-weight: bold;
+	font-weight: normal;
 }
 
 p {
