@@ -1,0 +1,10 @@
+Bootstrap
+	The most popular HTML, CSS and JS framework for developing responsive, mobile first projects on the web.
+	Very popular, used in industry
+	Make front-end development FAST
+	Single CSS and JS files
+	Lego pieces to put together to use on your site
+	Use main components and add own styles on top
+	Grid-System
+	Navbars
+	Responsiveness
