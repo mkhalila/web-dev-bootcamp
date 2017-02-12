@@ -16,4 +16,6 @@ Grid System
 	Every container in bootstrap can be divided into 12 different columns
 	Can pick how much of 12 each element can take
 	Ratio
-	
+	col-lg-1 col-lg-10 col-lg-1
+	Can have 4 different layouts: xs, s, m, lg
+	Can specify ratios for each of the 4 layouts
