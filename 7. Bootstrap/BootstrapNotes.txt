@@ -8,3 +8,12 @@ Bootstrap
 	Grid-System
 	Navbars
 	Responsiveness
+
+Grid System
+	Act as skeleton of entire app
+	Add structure and layout to app
+	Divide width of the screen into pieces and pick how many pieces we want each of our elements to take up
+	Every container in bootstrap can be divided into 12 different columns
+	Can pick how much of 12 each element can take
+	Ratio
+	
