@@ -1,0 +1,52 @@
+Boolean Logic
+  Statement evaluate to true or false
+
+Comparison Operators
+  == equal in value !=
+  === equal in value and type !==
+
+Type coercion
+  5 == "5" //true
+  5 === "5" //false
+  null == undefined //true
+  null === undefined //false
+  So always use ===
+
+Interesting cases
+  true == "1" //true
+  0 == false //false
+  null == undefined //true
+  NaN == NaN //false
+
+Logical Operators
+  && || !
+  Short circuiting
+
+Truthy and Falsy values
+  "" //false
+  !!null //false
+  !!-1 //true
+  !!NaN //false
+
+Conditions
+  Add decisions making to code
+
+If
+Else If
+Else
+
+var age = prompt("What is your age?");
+if (age < 18)
+  console.log("You cannot enter the venue");
+else if (age < 21)
+  console.log("You can enter but cannot drink");
+else
+  console.log("You can enter and drink")
+
+While loops
+  while (someCondition) {}
+  Can get infinite loops
+
+For loops
+  for(init; condition; step) {}
+  Looping using counters

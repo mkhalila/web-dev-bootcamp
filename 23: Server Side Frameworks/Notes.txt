@@ -1,0 +1,99 @@
+Framework Vs. Library
+  Inversion of control
+    When you call a library, you are in control
+    When you include a framework, it handles control flow, it calls you
+  Control flow is with framework, you fill in whitespaces
+  E.g. Up to us to use certain methods from JQuery
+  E.g. Express framework, decisions made for us, we have to work alongside it
+  Frameworks: Take setup and commonalities and pre-packages it
+    So can focus on what makes the app unique rather than basic stuff
+
+Express
+  Web dev framework
+  Handles routes, database connection, server setup etc.
+  Glue that keeps it all together
+
+Why Express?
+  Most popular Node web dev framework
+  Very lightweight framework
+    Doesn't hide things from you
+    Lots of blanks to fill in
+    Doesn't do things you don't expect it to do
+    You know exactly what you're getting
+    While Rails, does so much for you, it's hard to understand what it's doing
+    Avoids becoming over-reliant on a frameworks way of doing things
+  Un-opinionated - doesn't force you to do anything in a certain way
+
+Express Routes:
+  Responsible for listening and receiving requests
+    Deciding what to send back
+  app.get("/", function(req res) { //GET request
+    //Do something when going to /
+  });
+
+Starting server
+  node app.js //Any JS file that is the entry point
+
+1. Create app.js file that will be entry-point
+2. Install express
+   npm install express
+3. Add express to app.js
+   var express = require("express");
+   var app = express();
+4. Add routes to app.js
+    app.get("/", function (req, res) {
+      res.send("Hi there!");
+    });
+
+    app.get("/bye", function (req, res) { //Callback function
+      res.send("Goodbye!");
+    });
+
+    app.get("/cat", function (req, res) {
+      res.send("MEOW!");
+    });
+
+req
+  Object that contains all the information regarding the request
+res
+  Object that contains all the information about what we're going to respond with
+
+ 5. Tell app to listen on certain port and IP address
+    app.listen([PORT], process.env.IP);
+
+npm <package> --save
+  --save auto stores the package name dependency in the package.json file
+
+package.json
+  Every package has this file
+  npm init //Create package.json for us
+  Metadata about a specific project
+  Licenses, dependencies + versions, author, name, version
+  Don't have to include node_modules folder in project or VCS
+    Don't have to upload individual modules
+    Auto install everything in package.json
+    Like a recipe for cooking a meal - don't need to include all ingredients with recipe
+      Can just state so the cooker can get ingredients themselves
+    Don't need to send all modules, just send 'shopping list' of packages
+
+Route matcher *
+  'Catching route', undefined routes
+  E.g. Error Page? Home Page etc.
+
+Route order
+  Route order matters!
+  Putting a * catcher before the defined routes will redirect everything to *
+  First route that matches will always be used
+
+Route parameters
+  reddit.com/r/soccer
+  But thousands of subreddits. So not practical to define app.get() thousands of times
+  Use pattern:
+    app.get("/r/:subredditName/", function () {
+      res.send("Welcome to a Subreddit!");
+    });
+    app.get("/r/:subredditName/comments/:id/:title");
+      Route parameters
+    Doesn't care about semantics, just patterns
+  Access route parameters:
+    req.params

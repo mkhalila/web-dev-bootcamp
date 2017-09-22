@@ -1,0 +1,37 @@
+# Intro to Node
+
+### What is Node?
+A JS Runtime built on Chrome's engine
+Event driven, non-blocking IO model: Lightweight + Efficient
+npm - largest ecosystem of OSS libraries in the world
+Enabled JS to execute on server side
+  i.e. Allowed it to be written on server side, not just front end
+  Can now write JS everywhere
+
+### Why we are learning?
+High demand + popularity atm
+It's in JavaScript, so we already know it
+  One language for frontend and backend
+It doesn't matter. Need TRANSFERRABLE SKILLS
+  Once you pickup Node, can easily understand the key transferrable concepts
+
+Node console: Like Chrome console
+  Useful for quick, quirky stuff
+  REPL: Read Evaluate Print Loop
+  Can't do things like alert(), prompt() etc
+  No DOM
+
+Running files with node
+  node filename.js
+  node app.js
+
+NPM
+  Largest ecosystem of OSS in world
+  A package manager for JS
+  Packages: Code others have written that we can include
+  Centralised packages
+  npm install package-name
+  Installing and using packages
+    npm install
+    require()
+      Include package in JS file

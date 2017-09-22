@@ -1,0 +1,53 @@
+Visit webpage
+  Find corresponding IP address to domain
+    Query submitted to ISP
+    DNS takes domain and turns it into an IP
+  Going to address
+    Request sent to IP address via HTTP
+    Find fastest path possible to server
+    Hopping from server to server
+  Destination server responds
+    Figures out what resouce we're asking for e.g. /courses
+    Server builds right content, pulling data
+    Sends files back as html, css, js
+  Browser renders received files
+
+Static Vs. Dynamic
+  Dynamic: compiled on server side
+    Server constructs webpage before sending back
+    Dynamic content sent back every time
+      E.g. Login
+
+Generic Stack
+  HTML CSS JS part of their stack that receives from the backend
+  Backend:
+    Backend app
+    Server
+    Database
+  Backend has lots of tech variance. Lots of choices
+  Stack: Which tech stack is used
+    E.g. Reddit uses Python + Flask, nginx server, postgresql db
+    stackshare.io
+
+Our Stack
+  Backend: Node, Express, MongoDB
+  Frontend: HTML, CSS, JS
+
+Request Response Cycle
+Postman: Make http requests, debug etc
+Types of requests: GET: Getting new webpage,
+                   POST: Send new FB post,
+                   PUT: Update post title after posting,
+                   DELETE, PATCH etc..
+Protocols: Expect behavior
+Payload: Body of request (View page source)
+Headers: Metadata
+  Status codes: Standardised way of giving feedback from requests
+
+Can send SOME data using get requests
+  E.g. Search for bananas in google, search term
+  Query string as parameters
+    Always starts with ?
+    Each param is seperated by &
+  If server was expecting it, it can do something with it
+  

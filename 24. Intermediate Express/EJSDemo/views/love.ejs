@@ -1,0 +1,11 @@
+<% include partials/header %>
+
+<h1>You fell in love with: <%= language %> </h1>
+<% if (language.toLowerCase() === "c++") { %>
+  <p>Ewwwwwwww. Bad Choice</p>
+<% } else { %>
+  <p>Good Choice!</p>
+<% } %>
+<p>P.S. this is the love.ejs file!</p>
+
+<% include partials/footer %>

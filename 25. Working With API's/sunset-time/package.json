@@ -1,0 +1,14 @@
+{
+  "name": "sunset-time",
+  "version": "1.0.0",
+  "description": "Retrieves sunset time for Hawaii from Yahoo API",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Khalil",
+  "license": "ISC",
+  "dependencies": {
+    "request": "^2.81.0"
+  }
+}

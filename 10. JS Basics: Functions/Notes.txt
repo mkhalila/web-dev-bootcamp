@@ -1,0 +1,71 @@
+Functions
+  Let us wrap bits of code into reusable packages
+  function doSomething() { // Some code block(s) } // Declaration
+  doSomething() // Call
+  doSomething // Without parenthesis it returns definition
+
+Arguments
+  Give function inputs
+  function sayHelloTo(name) {
+    console.log("Hello " + name);
+  }
+  function area(length, width) {
+    return length * width;
+  }
+  If you miss out a parameter it's value is parameter
+
+Input -> Function -> Output
+    return outputs something from a function
+    Can capture and use return values elsewhere
+    return stops execution of a function
+
+Function expression
+  Another way of defining a function
+  var area = function(length, width) {
+    return length * width;
+  }
+  area(5, 2) // 10
+  If area is reassigned, function will be lost
+  Temporary
+
+function isEven (num) {
+  return num % 2 === 0;
+}
+
+isEven(2);
+isEven(3);
+
+function factorial (num) {
+  if (num == 0) return 1;
+  return num * factorial (num - 1);
+}
+
+function kebabToSnake (str) {
+  // Replaces every occurrence of - with _
+  return str.split("-").join("_");
+  // Alternative using regex
+  //return str.replace(/-/g, "_");
+}
+
+Scope
+  Context that code is executed in
+  Lifetime of visibility of a function or variable
+  function doMath() { var x = 40; }
+  x // Not visible outside function doMath i.e. local scope
+  var y = 5;
+  function doMoreMath() {
+    y = 100;
+    console.log(y)
+  } // 100
+  Scope not shared between functions
+
+Higher Order Functions
+  Functions that take other functions as arguments, or return a function
+
+  function sayHello(arg) { console.log ("Hello")}
+  setInterval(sayHello, 3000);
+
+  Anonymous Function
+  setInterval(function() {
+    console.log("Hello");
+  }, 2000);

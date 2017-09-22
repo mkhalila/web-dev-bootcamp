@@ -1,0 +1,113 @@
+Arrays wouldn't be very meaningful
+E.g. how do we retrieve home town of a person? Only way is index
+What if order was reversed when creating array?
+
+Objects
+  var person = {
+    name: "Cindy",
+    age: 32,
+    city: "LA"
+  }
+  key-value pair
+  No order required when creating
+
+  person["name"] //Cindy
+  person.name //Cindy
+
+  Can't use dot notation if key begins with a number:
+  person["1blah"] //Ok
+  person.1blah //Not Ok
+  person["i like"] //Ok
+  person.i like //Not Ok
+
+  Can lookup a variable with bracket notation
+  var str = "name";
+  someObject.str //Looks for field called 'str'
+  someObject[str] //Looks for field with name as value of str i.e. name
+
+  Updating data
+    person["age"] += 1;
+    person.city = "London";
+
+    Creating objects
+    Make empty object then add
+    All at once
+    use new Object(); //less common
+
+  Can hold all sorts of data
+
+Arrays Vs Objects
+  Arrays list, with indexed order
+  Objects like dictionaries/map
+  Adding to arrays requires specifying where to add
+    Not with objects
+  Both use key value pairs, arrays being subset with keys always ints
+
+Nested Arrays/Objects
+  var posts = [
+    { //First post
+      title: "Cats are mediocre",
+      author: "Colt"
+      comments: ["Awesome post", "terrible post"]
+    },
+    {
+      title: "Cats are actually awesome",
+      author: "Catt Luvr"
+      comments: ["<3", "I hate you"]
+    }
+  ]
+
+  posts[1] // First post
+  posts[1].title // First post title
+
+Methods
+  var obj = {
+    name: "Chuck",
+    age: 45,
+    friends: ["bob", "tinA"],
+    add: function  (v1, v2) { return v1 + v2 }
+  }
+
+  obj.add(1, 2) //3
+
+  Reasons for adding functions to objects
+    Organisation
+    Avoid namespace collisions: cat.speak() dog.speak()
+    this
+      var comments = {};
+      comments.data = ["Good job", "Lame!"];
+      comments.print = function() {
+        this.data.forEach (function (el) {
+          console.log(el);
+        })
+      }
+
+  function Person(name, secret) {
+    // public
+    this.name = name;
+
+    // private
+    var secret = secret;
+
+    // public methods have access to private members
+    this.setSecret = function(s) {
+        secret = s;
+    }
+
+    this.getSecret = function() {
+        return secret;
+    }
+
+    //Private Function
+    var secretFunction = function () {
+      console.log("bananas");
+    };
+
+    this.getFunction = function(s) {
+        return secretFunction;
+    }
+
+    this.setFunction = function(newFunction) {
+        secretFunction = newFunction;
+    }
+}

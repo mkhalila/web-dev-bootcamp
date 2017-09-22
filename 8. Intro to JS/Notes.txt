@@ -1,0 +1,49 @@
+HTML - nouns
+CSS - adjectives
+JS - verbs/actions
+  Most important tech
+  Front end: JS
+NodeJS
+  JS on the Back end
+
+Number:
+  Includes integers, floats, negatives etc.
+  Doesn't differentiate
+Strings: "" or ''
+  Valid to use single quotes inside double quotes
+  + concatenation
+  "Escape character: \""
+  "Hello".length = 5
+  "Hello"[1] = "e"
+Booleans:
+
+Special values
+  null
+  undefined
+
+Uses regular BIDMAS for operator precedence
+
+Variable
+  Named container that stores values
+  var myVariable = "Khalil";
+  Dynamic typing
+  camelCase
+
+undefined
+  Variables that are declared but not initialized YET
+
+null
+  Explicitly nothing
+  e.g. currentPlayer = null; // Game over
+
+alert
+  Pops up message to user
+  alert("Hello there");
+
+prompt
+  Get input from a user
+  var userName = prompt("What is your name?");
+
+console.log
+  Print to JS console
+  console.log("Hello from the console.")

@@ -1,0 +1,113 @@
+Array
+  Group of data, one reference
+  Don't have to be same type of data
+
+var friends = ["Charlie", "Liz", "David"]
+Are indexed
+  friends[0] // "Charlie"
+Get Length
+  friends.length //3
+Can update
+  friends[0] = "Chuck"
+  friends[1] = "Lizzy"
+Add more after
+  friends[3] = "New Friend"
+  Can have empty spaces when adding via index
+
+Another init
+  var friends = new Array(); //Uncommon
+
+array.push(item)
+  Adds to END of array
+  Don't have to know length/index
+  friends.push("New Friend");
+
+array.pop()
+  Remove last item in an array
+  friends.pop(); //"David"
+
+array.unshift()
+  Add to FRONT of array
+  friends.unshift("Khalil");
+
+array.shift()
+  Remove the first item of array
+  friends.shift("Charlie")
+
+array.indexOf
+  Find index of an item in an array
+  Case sensitive
+  Returns -1 if element not present
+
+array.slice()
+  Returns a copy of a part of an array
+  Ranges defined by range index
+  var newCopy = [1, 2, 3].slice(1,2); // {2}
+  var newCopy = [1, 2, 3].slice(1,3); // {2, 3}
+
+2D Arrays
+  var friendGroups = [
+    ["Harry", "Ron", "Hermione"],
+    ["Malfoy", "Crabbe", "Goyle"],
+    ["Mooney", "Wormtail", "Prongs"]
+  ]
+
+  friendGroups[2][0] // "Mooney"
+  friendGroups[1][2] // "Goyle"
+
+Iteration
+  Can use regular for loop
+    for(var i = 0; i < array.length; i++) {
+      console.log(array[i]);
+    }
+  ForEach
+    Abstracts away counter
+    arr.forEach(someFunction);
+    var colors = ["red", "green", "blue"];
+    colors.forEach(function(color) { //color is each item in the array
+      console.log(color);
+    });
+
+    function printNice(color) {
+      console.log("Colour: " + color);
+    }
+    colors.forEach(printNice);
+
+    function printReverse(arr) {
+      arr.reverse().forEach(function(element) {
+          console.log(element);
+      })
+    };
+
+    function printReverse(arr) {
+      for (var i = arr.length-1; i >= 0; i--)
+        console.log(arr[i]);
+    };
+
+    function printElement(element) {
+      console.log(element);
+    }
+
+    function printReverse(arr) {
+      arr.reverse().forEach(printElement);
+    }
+
+    function isUniform(arr) {
+      var isEqual = false;
+      var value = arr[0];
+
+      arr.forEach(function(elem) {
+        if (value !== elem)
+          isEqual = false;
+        else isEqual = true;
+      });
+      return isEqual;
+    };
+
+    // Better
+    function isUniform(arr) {
+      var value = arr[0];
+      for (var i = 1; i < arr.length; i++)
+        if (value !== arr[i]) return false;
+      return true;
+    }

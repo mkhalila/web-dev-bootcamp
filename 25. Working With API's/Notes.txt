@@ -1,0 +1,51 @@
+API
+  Application Program Interface
+  Code to interact with other code in some way
+
+Web API's
+  Generally communicate over HTTP
+  Twitter: Get all tweets...
+  GooglePlaces API: What petrol stations are nearby...
+  Reddit
+  Facebook
+  YELP
+  ...
+
+Programmable Web
+  15,000+ APIs
+
+Two main formats WEB APIs respond with
+  Not HTML - they respond with Data, not structure
+  1. XML
+  2. JSON
+
+XML
+  Extended Markup Language
+  Syntactically similar to HTML
+  Doesn't describe structure like HTML
+  Encodes key-value pairs
+  No particular tags like HTML
+  <person>
+    <age>21</age>
+    <name>Travis</name>
+    <city>Los Angeles</city>
+  </person>
+
+JSON
+  Javascript Object Notation
+  Like JS objects
+  All keys and values are strings
+  Become more popular than XML recently
+    Since lot more applications are using JS
+    Works naturally with JS
+  {
+    "person": {
+      "age": "21",
+      "name": "Travis",
+      "city": "Los Angeles"
+    }
+  }
+
+API Calls with Node/JS
+  Package called request
+    npm install request --save
